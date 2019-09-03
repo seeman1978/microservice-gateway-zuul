@@ -6,12 +6,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
 import rx.Observable;
 import rx.Observer;
 
 import java.util.HashMap;
 
+@RestController
 public class AggregationController {
     public static final Logger LOGGER = LoggerFactory.getLogger(MicroserviceGatewayZuulApplication.class);
 
